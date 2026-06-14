@@ -93,6 +93,10 @@ Goals: 🪙 fewer tokens · 🎯 accuracy · ✅ truth-telling · ⚡ speed · �
 | `code-reviewer` | General diff review: correctness, security, error handling, maintainability | 💎🎯 |
 | `db-reviewer` | Schema/migration/query/RLS review: locks, data-loss, perf, security | 🎯💎 |
 | `frontend-reviewer` | UI review: a11y, reduced-motion, anti-template design, architecture | 💎 |
+| `security-reviewer` | Security pass: secrets, injection, auth/authz, RLS gaps, SSRF, XSS/CSRF, OWASP | 💎🎯 |
+| `api-reviewer` | Route handlers / server actions: validation, status codes, errors, rate limiting, authz | 🎯💎 |
+| `test-reviewer` | Test quality + coverage: behavioral tests, edge cases, regression tests, flakiness | 💎✅ |
+| `performance-reviewer` | N+1, indexes, slow queries, bundle size, CWV, caching, render perf | ⚡🎯 |
 
 ## Supporting
 | Item | What it does | Goals |

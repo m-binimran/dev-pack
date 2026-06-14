@@ -6,6 +6,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/). This project us
 ## [Unreleased]
 
 ### Added
+- **4 more review agents** (agents now 7): `security-reviewer`, `api-reviewer`, `test-reviewer`,
+  `performance-reviewer` - each with a `/<name>` slash command. Fills the security / API-boundary /
+  test-quality / performance review gaps.
 - **Per-skill slash commands** (`commands/` -> `.claude/commands/`): every skill is now directly callable as
   `/<skill-name>` (e.g. `/schema-designer`, `/api-design`), alongside the workflow loops. Installer +
   uninstaller updated to copy/remove them.

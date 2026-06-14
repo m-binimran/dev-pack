@@ -30,8 +30,8 @@ New-Item -ItemType Directory -Force -Path $hooksDest | Out-Null
 Copy-Item -Path (Join-Path $src "hooks\*.py") -Destination $hooksDest -Force
 Write-Host "  hooks  -> .claude\hooks" -ForegroundColor Green
 
-# 3. Copy skills -> .claude/skills, loops -> .claude/commands, agents -> .claude/agents
-$map = @{ "skills" = "skills"; "loops" = "commands"; "agents" = "agents" }
+# 3. skills -> .claude/skills, loops + commands -> .claude/commands, agents -> .claude/agents
+$map = @{ "skills" = "skills"; "loops" = "commands"; "commands" = "commands"; "agents" = "agents" }
 foreach ($srcDir in $map.Keys) {
   $destName = $map[$srcDir]
   $dest = Join-Path $ProjectPath ".claude\$destName"

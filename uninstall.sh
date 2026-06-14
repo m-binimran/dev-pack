@@ -17,6 +17,7 @@ echo "Removing dev-pack from $PROJECT_PATH"
 for f in "$SRC"/hooks/*.py;  do rm -f "$PROJECT_PATH/.claude/hooks/$(basename "$f")"; done
 for d in "$SRC"/skills/*/;   do rm -rf "$PROJECT_PATH/.claude/skills/$(basename "$d")"; done
 for f in "$SRC"/loops/*.md;  do rm -f "$PROJECT_PATH/.claude/commands/$(basename "$f")"; done
+for f in "$SRC"/commands/*.md; do rm -f "$PROJECT_PATH/.claude/commands/$(basename "$f")"; done
 for f in "$SRC"/agents/*.md; do rm -f "$PROJECT_PATH/.claude/agents/$(basename "$f")"; done
 echo "  removed hooks, skills, commands, agents"
 

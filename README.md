@@ -75,6 +75,16 @@ them in manually per the README in each folder.)
 
 ---
 
+## Slash commands
+After install, type `/` in Claude Code to see them:
+- **Workflows** (multi-step): `/plan-build-review-fix`, `/design-first`, `/migration-loop`, `/build-green`,
+  `/ship-check`, `/db-tune`.
+- **Skills** (one slash command per skill, 26 total): `/schema-designer`, `/migration-safety`,
+  `/query-optimizer`, `/rls-policy`, `/supabase-auth`, `/api-design`, `/stripe-payments`, `/component-scaffold`,
+  `/animation-implement`, `/theme-tokens`, `/test-author`, `/caching-revalidation`, ... (one for every skill in `skills/`).
+
+Skills also auto-trigger from their description - the slash command is just the explicit way to call one.
+
 ## Honest scope (read this)
 
 - This is a **new** repo. It starts at 0 stars like everything does. No inflated claims.

@@ -33,6 +33,10 @@ Get-ChildItem (Join-Path $src "loops\*.md") | ForEach-Object {
   $t = Join-Path $ProjectPath ".claude\commands\$($_.Name)"
   if (Test-Path $t) { Remove-Item $t -Force }
 }
+Get-ChildItem (Join-Path $src "commands\*.md") -ErrorAction SilentlyContinue | ForEach-Object {
+  $t = Join-Path $ProjectPath ".claude\commands\$($_.Name)"
+  if (Test-Path $t) { Remove-Item $t -Force }
+}
 # 4. agents
 Get-ChildItem (Join-Path $src "agents\*.md") | ForEach-Object {
   $t = Join-Path $ProjectPath ".claude\agents\$($_.Name)"

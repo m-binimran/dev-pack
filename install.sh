@@ -27,6 +27,8 @@ cp -R "$SRC/skills/." "$PROJECT_PATH/.claude/skills/"
 echo "  skills -> .claude/skills"
 cp -R "$SRC/loops/." "$PROJECT_PATH/.claude/commands/"
 echo "  loops  -> .claude/commands"
+cp -R "$SRC/commands/." "$PROJECT_PATH/.claude/commands/"
+echo "  skill-cmds -> .claude/commands"
 cp -R "$SRC/agents/." "$PROJECT_PATH/.claude/agents/"
 echo "  agents -> .claude/agents"
 

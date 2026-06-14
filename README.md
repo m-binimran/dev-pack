@@ -38,6 +38,7 @@ Every item serves at least one goal:
 | `mcp/` | Postgres + browser MCP config | Tooling |
 | `templates/` | PRD / ARCHITECTURE / TASKS / CLAUDE.md starters | Docs |
 | `tests/` | `test_hooks.py` — runs every hook against sample inputs | Proof |
+| `meta/` | `claude-pack-builder` skill — the methodology that built this pack | How it was made |
 
 See [`INVENTORY.md`](INVENTORY.md) for the full table of every item and why it exists.
 

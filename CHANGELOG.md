@@ -6,6 +6,9 @@ Format based on [Keep a Changelog](https://keepachangelog.com/). This project us
 ## [Unreleased]
 
 ### Added
+- **`meta/claude-pack-builder`** — the reusable skill (methodology + references) that built this pack:
+  research → design → build → verify → safe-publish. Lives under `meta/` so the installer doesn't copy it
+  into end-user projects.
 - **8 platform skills** (skills now 26 total): `supabase-auth`, `api-design`, `storage-upload`,
   `stripe-payments`, `error-states`, `caching-revalidation`, `realtime-subscriptions`, `observability`.
   These close the API and auth steps the README's path claims, plus common client-site needs

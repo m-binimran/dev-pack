@@ -82,8 +82,9 @@ After install, type `/` in Claude Code to see them:
 - **Skills** (one slash command per skill, 26 total): `/schema-designer`, `/migration-safety`,
   `/query-optimizer`, `/rls-policy`, `/supabase-auth`, `/api-design`, `/stripe-payments`, `/component-scaffold`,
   `/animation-implement`, `/theme-tokens`, `/test-author`, `/caching-revalidation`, ... (one for every skill in `skills/`).
+- **Review agents** (one per agent): `/code-reviewer`, `/db-reviewer`, `/frontend-reviewer`.
 
-Skills also auto-trigger from their description - the slash command is just the explicit way to call one.
+Skills and agents also trigger automatically - the slash command is just the explicit way to call one.
 
 ## Honest scope (read this)
 

@@ -9,6 +9,8 @@ Format based on [Keep a Changelog](https://keepachangelog.com/). This project us
 - **Per-skill slash commands** (`commands/` -> `.claude/commands/`): every skill is now directly callable as
   `/<skill-name>` (e.g. `/schema-designer`, `/api-design`), alongside the workflow loops. Installer +
   uninstaller updated to copy/remove them.
+- **Per-agent slash commands**: each review agent is callable as `/<agent-name>` (`/code-reviewer`,
+  `/db-reviewer`, `/frontend-reviewer`).
 - **`meta/claude-pack-builder`** — the reusable skill (methodology + references) that built this pack:
   research → design → build → verify → safe-publish. Lives under `meta/` so the installer doesn't copy it
   into end-user projects.

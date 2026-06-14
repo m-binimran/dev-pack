@@ -1,0 +1,25 @@
+name: test-hooks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.8", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run hook test harness
+        run: python tests/test_hooks.py
+      - name: Validate JSON config
+        run: |
+          python -c "import json; json.load(open('hooks/settings.json')); print('settings.json OK')"
+          python -c "import json; json.load(open('mcp/.mcp.json')); print('.mcp.json OK')"

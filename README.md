@@ -1,7 +1,17 @@
 # dev-pack
 
+[![CI](https://github.com/m-binimran/dev-pack/actions/workflows/test-hooks.yml/badge.svg)](https://github.com/m-binimran/dev-pack/actions/workflows/test-hooks.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-pack-d97757)
+![Python](https://img.shields.io/badge/hooks-Python%203.8%2B-3776AB)
+
 **Guardrails, skills & agent loops for database + website builders on Claude Code.**
 Targeted at the **Next.js + Supabase (Postgres)** stack.
+
+> **Why it's different:** most "awesome Claude Code" resources ship *advisory rules* you hope the model
+> follows. dev-pack's guarantees come from **deterministic hooks** that run every time - block a hardcoded
+> secret, refuse a `DROP TABLE` without a `WHERE`, flag a migration with no rollback - with skills, slash
+> commands, and review subagents layered on top. Every hook is tested in CI.
 
 Most "awesome" lists are broad and advisory. This pack is narrow and **enforced**: the
 guarantees come from **hooks** (deterministic — they run every time), with rules, skills and

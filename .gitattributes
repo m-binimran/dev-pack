@@ -1,0 +1,7 @@
+# Normalize line endings: LF in the repo for everything,
+# checked out as LF everywhere except Windows-native PowerShell scripts.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.jpg binary
+*.gif binary
